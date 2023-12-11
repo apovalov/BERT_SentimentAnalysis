@@ -133,3 +133,10 @@ P.S. The option `torch.no_grad()` disables gradient calculation during the data 
 # Logistic Regression
 
 We have just extracted our numerical representations of reviews (embeddings) using a pre-trained transformer. We now proceed to the final stage - training a model on top of these embeddings. For our task (multi-class classification of 3 classes), we will use the standard logistic regression from scikit-learn.
+
+
+1. Tokenization
+2. Batch-processing
+3. Padding + Attention mask
+4. Tokens -> Embeddings // multitask
+5. CLS -> LogisticRegression
